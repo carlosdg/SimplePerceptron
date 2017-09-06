@@ -24,7 +24,7 @@
 </p>
 <p>
     In a very abstract level a perceptron is just a mathematical model that tries to describe
-    how real single neuron behaves. In this model a neuron receives various inputs (the features
+    how a real single neuron behaves. In this model a neuron receives various inputs (the features
     of an element), does some operation with those (a weighted sum) and if the result of that
     pass some threshold, it outputs the final result. This last part is the activation function,
     it seems that real neurons doesn't always propagates an output, only when the weighted sum
@@ -36,7 +36,7 @@
 <p>
     However this isn't convenient because the function is not continuous. And the derivative is always
     zero where it is continuous. So we cannot use gradient descent for updating the weights to minimize
-    some error, (that error function would depend on the output of the perceptron that depends on that function).
+    some error, (that error function would depend on the output of the perceptron that depends on f(x) ).
     So the alternative I chose is the sigmoid function s(x) = 1 / (1 + exp(-x)). Although there are a lot
     of functions that can be used as activation functions, I chose this one because it is very similar
     to the previous function but it is continuous. Also it is very simple and the derivative is very easy
